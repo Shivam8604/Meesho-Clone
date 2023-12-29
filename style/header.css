@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Top NavBar */
+
+.header{
+    max-width: 1400px;
+    margin: 20px auto;
+}
+.top-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.top-nav .logo{
+    color: #570d48;
+    font-family: sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+}
+.top-nav .searchbar{
+    display: flex;
+    align-items: center;
+    border: 1px solid #cacad5;
+    padding: 10px;
+    width: 450px;
+}
+
+.top-nav .searchbar input{
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+}
+.searchbar input[type="text"]{
+    font-size: 16px;
+}
+.top-nav .download{
+    display: flex;
+    align-items: center;
+}
+.download .phone{
+    font-size: 20px;
+}
+.download span{
+    font-size: 18px;
+    color: #3f3e3e;
+    margin-left: 10px;
+}
+.Newsroom, .Supplier{
+    font-size: 18px;
+    color: #3f3e3e;
+}
+.profile, .cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+/* .profile span, .cart span{
+    font-size: 1px;
+    color: #3f3e3e;
+} */
+
+hr{
+    margin: 20px 0;
+}
+
+
+/* complete top  navbar */
+
+.bottom-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+li{
+    font-size: 16px;
+    color: #3f3e3e;
+}
+
+
