@@ -59,6 +59,10 @@
     font-size: 18px;
     color: #3f3e3e;
 }
+.profile{
+    position: relative;
+    cursor: pointer;
+}
 .profile, .cart{
     display: flex;
     flex-direction: column;
@@ -67,11 +71,45 @@
     font-size: 16px;
     margin-bottom: 10px;
 }
-/* .profile span, .cart span{
-    font-size: 1px;
-    color: #3f3e3e;
-} */
+.profile:hover{
+    text-decoration: underline;
+    text-decoration-color: #570d48;
+    color: #570d48;
+}
 
+/* profile Drop down */
+
+.profileDrop{
+    display: none;
+    width: 210px;
+    height: 160px;
+    padding: 15px 10px;
+    position: absolute;
+    top: 65px;
+    left:-80px;
+    background-color: #fff;
+    color: black;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+}
+.profileDrop button{
+    margin: 15px 0;
+    margin-bottom: 2px;
+    padding: 10px 25px;
+    width: 100%;
+    background-color: #8b0c72;
+}
+.profileDrop hr{
+    border: 1px solid black;
+}
+
+.profileDrop .myOrder{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.myOrder h3{
+    margin-left: 20px;
+}
 hr{
     margin: 20px 0;
 }
@@ -130,8 +168,10 @@ ul li a{
     font-size: 20px;
     font-weight: 500;
 }
-.socialIcon li a{
-    color: #fff;
-    margin-right: 8px;
+.socialIcon{
+    display: flex;
+    flex-direction: column;
+}
+.socialIcon a{
 
 }
