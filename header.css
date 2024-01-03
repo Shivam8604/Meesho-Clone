@@ -82,7 +82,7 @@
 .profileDrop{
     display: none;
     width: 210px;
-    height: 160px;
+    height: 190px;
     padding: 15px 10px;
     position: absolute;
     top: 65px;
@@ -91,11 +91,16 @@
     color: black;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
 }
-.profileDrop button{
+.open{
+    display: block;
+}
+.profileDrop a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
     margin: 15px 0;
-    margin-bottom: 2px;
-    padding: 10px 25px;
-    width: 100%;
+    padding: 8px 0;
     background-color: #8b0c72;
 }
 .profileDrop hr{
@@ -110,22 +115,34 @@
 .myOrder h3{
     margin-left: 20px;
 }
-hr{
-    margin: 20px 0;
-}
+
 
 
 /* complete top  navbar */
-
+.bottom-nav{
+    width: 100%;
+    height: 50px;
+}
 .bottom-nav ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-items: center;
     list-style: none;
+    cursor: pointer;
+    height: 100%;
+    margin: 0;
 }
-li{
+.bottom-nav ul li{
+    height: 100%;
+    display: flex;
+    align-items: center;
     font-size: 16px;
     color: #3f3e3e;
+    border-bottom: 3px solid transparent;
+}
+.bottom-nav ul li:hover{
+    border-bottom-color: rgb(204, 19, 127);
 }
 
 
@@ -172,6 +189,6 @@ ul li a{
     display: flex;
     flex-direction: column;
 }
-.socialIcon a{
+/* .socialIcon a{
 
-}
+} */

@@ -12,8 +12,11 @@ close();
 
 //  user profile
 
-let userAccount = document.querySelector(".profileIcon");
+function openLoginPage(){
+  let userAccount = document.querySelector(".profileIcon");
 
-userAccount.addEventListener('mouseenter',()=>{
-    document.querySelector('#user').style.display = "block";
-})
+userAccount.addEventListener('click',()=>{
+    document.querySelector('#user').classList.toggle("open")
+});
+}
+openLoginPage();
