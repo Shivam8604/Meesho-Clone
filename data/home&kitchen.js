@@ -13,4 +13,17 @@ const HomeAndKitchen = [
     },
 ];
 
-export default HomeAndKitchen;
+let homeAndKitchen = document.getElementById("home");
+function homeAndKitchenFunc() {
+  return HomeAndKitchen.map((el) => {
+    let list = "";
+    list = el.data.map((element) => `<p>${element}<p>`).join(" ");
+    return `
+    <div class="column">
+      <h4>${el.heading}</h4>
+      ${list}
+      </div>
+    `;
+  }).join("");
+}
+homeAndKitchen.innerHTML = homeAndKitchenFunc();

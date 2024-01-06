@@ -1,4 +1,4 @@
-const electronic = [
+const Electronic = [
     {
         heading : "Mobiles & Accessories",
         data : ["All Mobiles & Accessories","Smartwatches","Mobiles & HOlders","Mobiles cases and covers"]
@@ -9,4 +9,17 @@ const electronic = [
     }
 ];
 
-export default electronic;
+let electronicType = document.getElementById("electronic");
+function electronicFunc() {
+  return Electronic.map((el) => {
+    let list = "";
+    list = el.data.map((element) => `<p>${element}<p>`).join(" ");
+    return `
+    <div class="column">
+      <h4>${el.heading}</h4>
+      ${list}
+      </div>
+    `;
+  }).join("");
+}
+electronicType.innerHTML = electronicFunc();

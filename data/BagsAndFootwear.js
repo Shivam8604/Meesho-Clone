@@ -17,4 +17,17 @@ const BagsAndFootwear = [
     },
 ];
 
-export default BagsAndFootwear;
+let bagsAndFootwear = document.getElementById("bags");
+function bagsAndFootwearFunc() {
+  return BagsAndFootwear.map((el) => {
+    let list = "";
+    list = el.data.map((element) => `<p>${element}<p>`).join(" ");
+    return `
+    <div class="column">
+      <h4>${el.heading}</h4>
+      ${list}
+      </div>
+    `;
+  }).join("");
+}
+bagsAndFootwear.innerHTML = bagsAndFootwearFunc();

@@ -24,4 +24,20 @@ const men = [
         data : ["All inner and sleep wear","Vests"]
     },
 ];
-export default men;
+
+let Men = document.getElementById("men");
+
+function menFunc(){
+    return men.map((el) => {
+        let list = " ";
+        list  = el.data.map((element) => `<p>${element}</p>`).join("");
+        return `
+        <div class="column">
+            <h4>${el.heading}</h4>
+            ${list}
+            </div>
+        `;
+    }).join(" ")
+}
+
+Men.innerHTML = menFunc();

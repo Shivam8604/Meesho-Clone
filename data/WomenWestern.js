@@ -17,4 +17,19 @@ const WomenWestern = [
     },
 ];
 
-export default WomenWestern;
+let Womenwestern = document.getElementById("womenWestern");
+
+function womenWesternFunc(){
+    return WomenWestern.map((el) =>{
+        let list = " ";
+        list = el.data.map((element) => `<p>${element}</p>`).join("");
+        return `
+        <div class="column">
+            <h4>${el.heading}</h4>
+            ${list}
+            </div>
+        `;
+    }).join()
+}
+
+Womenwestern.innerHTML = womenWesternFunc();
