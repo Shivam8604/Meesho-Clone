@@ -189,7 +189,14 @@
 /* lowest price section */
 
 .lowestpriceContainer{
-
+    display: flex;
+    max-width: 1400px;
+    margin: 50px auto;
+    background-color: red;
+    flex: 1;
+}
+.lowestprice_text{
+    width: 50%;
 }
 .lowestprice_image{
     width: 50%;
