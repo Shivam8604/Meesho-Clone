@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 :root{
     --hoverTextColor:rgb(244, 51, 151);
@@ -46,6 +47,7 @@
 
 #close{
     display: none;
+    cursor: pointer;
 }
 .top-nav .download{
     display: flex;
@@ -190,14 +192,97 @@
 
 .lowestpriceContainer{
     display: flex;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 50px auto;
-    background-color: red;
+    justify-content: space-between;
     flex: 1;
+}
+.lowestpriceContainer h1{
+    font-size: 40px;
+    margin: 0;
 }
 .lowestprice_text{
     width: 50%;
+    padding: 25px 0 0 25px;
 }
-.lowestprice_image{
+.lowestPrice_image{
     width: 50%;
+}
+.lowestPriceWhay{
+    display: flex;
+    margin-top: 20px;
+}
+.lowestPriceItem{
+    padding:0 20px;
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-right: 2px solid #ccc;
+}
+.lowestPriceItem p{
+    padding-left: 10px;
+}
+.lowestPrice_icon{
+    width: 30px;
+    border-radius: 40px;
+    /* background-color: rgb(238, 113, 187); */
+}
+.downloadApp__container{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    height: 50px;
+    background-color: var(--hoverTextColor);
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+}
+.downloadApp__container p{
+    padding: 0px 20px;
+}
+
+/* topCategoriesFrom */
+
+.topCategoriesFrom{
+    width: 1200px;
+    margin: 0 auto;
+}
+.topCategoriesHeading{
+    display: flex;
+    align-items: center;
+}
+.topCategoriesHeading h1{
+    margin: 0 40px;
+}
+.horizontalLine{
+    width: 30%;
+    padding: 1px;
+    background-color: var(--hoverTextColor);
+}
+.topCategoriesImage{
+    width: 100%;
+    height: 550px;
+    background-image: url("https://images.meesho.com/images/marketing/1704720332049_1200.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+}
+.topCategoriesImage img{
+    margin: 8% 20px;
+}
+
+/* essentialContainer */
+
+.essentialContainer{
+    max-width: 1200px;
+    margin: 10px auto;
+    width: 100%;
+    margin-top: 50px;
+    height: 400px;
+    background-image: url("https://images.meesho.com/images/marketing/1704720392370_1200.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
 }

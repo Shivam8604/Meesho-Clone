@@ -22,5 +22,12 @@ userAccount.addEventListener('click',()=>{
 }
 openLoginPage();
 
-
+function cleanInput(){
+  let closeBtn = document.getElementById("close");
+  closeBtn.addEventListener("click", () =>{
+    let input = document.getElementById("SearchInput");
+    input.value = " ";
+  })
+};
+cleanInput();
 
