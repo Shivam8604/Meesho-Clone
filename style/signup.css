@@ -11,14 +11,23 @@
 /* Top NavBar */
 
 .header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 2px  rgba(0, 0, 0, 0.3);
+}
+.navbarContainer{
     max-width: 1400px;
-    margin: 20px auto;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
 }
 .top-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 10px 0;
+    border-bottom: 1px solid black;
 }
 .top-nav .logo{
     color: #570d48;
@@ -185,4 +194,93 @@
 }
 .column{
     padding-right: 20px;
+}
+
+/* for SignUp section */
+
+.createLayout{
+    width: 90%;
+    height: 630px;
+    margin: auto;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8%;
+    margin-bottom: 11%;
+}
+.left-div{
+    width: 520px;
+    height: 440px;
+    margin: 0 60px 0 30px;
+    border: 1px solid transparent;
+}
+.right-div{
+    width: 550px;
+    height: 100%;
+    margin-left: 30px;
+    border: 1px solid transparent;
+}
+.right-div h2{
+    margin-bottom: 50px;
+}
+.right-div div{
+    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+#First-Name{
+    width: 300px;
+    height: 25px;
+    padding: 6px 20px;
+    border: 1px solid #eeeeee;
+}
+#Last-Name{
+    width: 300px;
+    height: 25px;
+    padding: 6px 20px;
+    border: 1px solid #eeeeee;
+}
+#mobile-number{
+    width: 300px;
+    height: 25px;
+    padding: 6px 20px;
+    border: 1px solid #eeeeee;
+}
+#email{
+    width: 300px;
+    height: 25px;
+    padding: 6px 20px;
+    border: 1px solid #eeeeee;
+}
+#password{
+    height: 30px;
+    border: 1px solid #eeeeee;
+}
+#Email{
+    height: 30px;
+    border: 1px solid #eeeeee;
+}
+#cfmpassowrd{
+    height: 30px;
+    border: 1px solid #eeeeee;
+}
+.check1{
+    width: 400px;
+    border: 1px solid #eeeeee;
+    padding: 10px;
+
+}
+#signupbutton{
+    margin-left: 60px;
+    width: 350px;
+    height: 35px;
+    background-color: var(--hoverTextColor);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.already{
+    margin-left: 140px;
+}
+#colorchange{
+    color: var(--hoverTextColor);
 }

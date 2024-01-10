@@ -285,10 +285,10 @@
     align-items: center;
 }
 .topCategoriesHeading h1{
-    margin: 0 40px;
+    margin: 0 10px;
 }
 .horizontalLine{
-    width: 30%;
+    width: 25%;
     padding: 1px;
     background-color: var(--hoverTextColor);
 }

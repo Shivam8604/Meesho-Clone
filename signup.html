@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="header">
-        <nav>
+        <nav class="navbarContainer">
           <div class="top-nav">
             <div>
               <span class="logo">meesho</span>
@@ -54,7 +54,6 @@
               <span>Cart</span>
             </div>
           </div>
-          <hr />
           <div class="bottom-nav">
             <ul>
               <li>
@@ -134,23 +133,46 @@
           <hr />
         </nav>
       </header>
+
+      <!-- signup section  -->
       <div class="createLayout">
         <div class="left-div">
           <img src="https://www.ubuy.co.in/skin/frontend/default/ubuycom-v1/images/create_account_banner.jpg" alt="">
         </div>
+        <hr>
         <div class="right-div">
           <h2>Welcome to Meesho</h2>
-          <div class="signup-info">
+          <div>
             <input id="First-Name" type="text" placeholder="First Name*" maxlength="25">
+          </div>
+          <div>
             <input id="Last-Name" type="text" placeholder="Last name*" maxlength="15">
+          </div>
+          <div>
             <input type="number" name="" id="mobile-number" placeholder="+91 Moblie Number*" maxlength="12">
-            <input type="email" placeholder="Email Address*" id="email" maxlength="30">
+          </div>
+          <div>
+            <input type="email" placeholder="Email Address*" id="Email" maxlength="30">
+          </div>
             <div class="password">
               <input type="password" name="" id="password" placeholder="Enter your password" maxlength="15">
               <input type="password" name="" id="cfmpassowrd" placeholder="Confirm password" maxlength="15">
             </div>
+            <div class="check1">
+              <input type="checkbox" name="check" id="checkbox">
+              <span>Join Our Miling List - Get updates on Rollbacks, special pricing, hot new items, gift ideas and more</span>
+            </div>
+            <div class="check2">
+              <input type="checkbox" name="terms" id="terms">
+              <span>I have read & Agreed</span><a href="#">Terms and Condition</a>
+            </div>
+            <div class="buttondiv"><button id="signupbutton">Create an Account</button></div>
+            <div class="colorhover"><span class="already">Already Have an Account? <a href="singin.html" id="x`">Login</a></span></div>
           </div>
         </div>
       </div>
+
+
+      <script src="scripts/signup.js"></script>
 </body>
 </html>
