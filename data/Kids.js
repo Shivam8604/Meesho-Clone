@@ -17,18 +17,19 @@ const Kids = [
     },
 ];
 
-let kids = document.getElementById("kid");
+let Kid = document.getElementById("kid");
+
 function kidsFunc(){
-    return Kids.map((el) =>{
-        let list = "";
-        list = el.data.map((element) => `<p>${element}<p>`).join(" ");
+    return men.map((el) => {
+        let list = " ";
+        list  = el.data.map((element) => `<p>${element}</p>`).join("");
         return `
         <div class="column">
-           <h4>${el.heading}</h4>
-           ${list}
-           </div>
+            <h4>${el.heading}</h4>
+            ${list}
+            </div>
         `;
     }).join(" ")
 }
 
-kids.innerHTML = kidsFunc();
+Kid.innerHTML = kidsFunc();

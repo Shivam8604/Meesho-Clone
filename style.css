@@ -52,6 +52,12 @@
 .top-nav .download{
     display: flex;
     align-items: center;
+    position: relative;
+    cursor: pointer;
+    height: 58px;
+}
+.download:hover{
+    border-bottom: 3px solid var(--hoverTextColor);
 }
 .download .phone{
     font-size: 20px;
@@ -61,6 +67,29 @@
     color: #3f3e3e;
     margin-left: 10px;
 }
+.downloadSource{
+    padding: 15px 20px;
+    position: absolute;
+    top: 60px;
+    left: -20px;
+    background-color: #fff;
+    z-index: 999;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    display: none;
+    
+}
+.download:hover .downloadSource{
+    display: block;
+}
+.downloadSource h3{
+    margin: 20px 0;
+}
+.downloadSource img{
+    width: 150px;
+    margin: 20px 0 0 0;
+}
+
+
 .Newsroom, .Supplier{
     font-size: 18px;
     color: #3f3e3e;
@@ -96,6 +125,7 @@
     background-color: #fff;
     color: black;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+    z-index: 999;
 }
 .open{
     display: block;
@@ -281,8 +311,27 @@
     margin: 10px auto;
     width: 100%;
     margin-top: 50px;
-    height: 400px;
+    height: 500px;
     background-image: url("https://images.meesho.com/images/marketing/1704720392370_1200.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.essentialContainer img{
+    max-width: 150px;
+
+}
+.essential_item{
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.essential_item img{
+    margin: 15px 0;
+}
+.viewAll{
+    margin-top: 50px;
 }
