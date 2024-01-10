@@ -335,3 +335,30 @@
 .viewAll{
     margin-top: 50px;
 }
+
+/* New Style */
+
+.newStyleContainer{
+    max-width: 1200px;
+    margin: 10px auto;
+    width: 100%;
+    height: 500px;
+    background-image: url("https://images.meesho.com/images/marketing/1704720694167_1200.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.newStyleContainer img{
+    width: 150px;
+    margin-top: 60px;
+}
+.newstyleItem{
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+}
+.newstyleItem img{
+    margin: 10px 0;
+}
